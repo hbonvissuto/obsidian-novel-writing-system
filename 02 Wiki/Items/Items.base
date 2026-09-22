@@ -1,0 +1,20 @@
+filters:
+  and:
+    - type == "item"
+    - file.inFolder("02 Wiki/Items")
+views:
+  - type: table
+    name: All Items
+    order:
+      - file.name
+      - item_type
+      - status
+      - owner
+      - creator
+      - origin
+      - locations
+      - related_lore
+      - first_appearance
+    sort:
+      - property: file.name
+        direction: ASC

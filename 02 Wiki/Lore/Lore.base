@@ -1,0 +1,68 @@
+filters:
+  and:
+    - type == "lore"
+    - file.inFolder("02 Wiki/Lore")
+views:
+  - type: table
+    name: All Lore
+    order:
+      - file.name
+      - lore_type
+      - status
+      - scope
+      - related_locations
+      - related_organizations
+      - related_lore
+      - first_appearance
+  - type: table
+    name: Canon
+    filters:
+      and:
+        - status == "canon"
+    order:
+      - file.name
+      - lore_type
+      - status
+      - scope
+      - related_locations
+      - related_organizations
+      - first_appearance
+  - type: table
+    name: Developing
+    filters:
+      and:
+        - status == "developing"
+    order:
+      - file.name
+      - lore_type
+      - status
+      - scope
+      - related_locations
+      - related_organizations
+      - first_appearance
+  - type: table
+    name: Open Questions
+    filters:
+      and:
+        - status == "question"
+    order:
+      - file.name
+      - lore_type
+      - status
+      - scope
+      - related_locations
+      - related_organizations
+      - first_appearance
+  - type: table
+    name: Economy
+    filters:
+      and:
+        - lore_type.contains("economy")
+    order:
+      - file.name
+      - lore_type
+      - status
+      - scope
+      - related_locations
+      - related_organizations
+      - first_appearance

@@ -1,0 +1,18 @@
+filters:
+  and:
+    - type == "event"
+    - file.inFolder("02 Wiki/Events")
+views:
+  - type: table
+    name: All Events
+    order:
+      - file.name
+      - event_type
+      - status
+      - date
+      - end_date
+      - location
+      - participants
+      - organizations
+      - related_events
+      - first_appearance

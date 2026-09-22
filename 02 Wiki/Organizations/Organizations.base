@@ -1,0 +1,18 @@
+filters:
+  and:
+    - type == "organization"
+    - file.inFolder("02 Wiki/Organizations")
+views:
+  - type: table
+    name: All Organizations
+    order:
+      - file.name
+      - organization_type
+      - status
+      - leader
+      - headquarters
+      - areas_of_influence
+      - first_appearance
+    sort:
+      - property: file.name
+        direction: ASC

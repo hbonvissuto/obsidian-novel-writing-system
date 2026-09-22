@@ -1,0 +1,44 @@
+filters:
+  and:
+    - type == "plot_thread"
+    - file.inFolder("03 Planning/Plot/Plot Threads")
+views:
+  - type: table
+    name: All Threads
+    order:
+      - file.name
+      - thread_type
+      - status
+      - characters
+      - organizations
+      - locations
+      - introduced
+      - resolved
+  - type: table
+    name: By Type
+    groupBy:
+      property: thread_type
+      direction: ASC
+    order:
+      - file.name
+      - thread_type
+      - status
+      - characters
+      - organizations
+      - locations
+      - introduced
+      - resolved
+  - type: table
+    name: Active Threads
+    filters:
+      and:
+        - status == "active"
+    order:
+      - file.name
+      - thread_type
+      - status
+      - characters
+      - organizations
+      - locations
+      - introduced
+      - resolved

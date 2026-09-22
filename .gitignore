@@ -1,0 +1,32 @@
+# ============================================================
+# Novel Template - Git Historian Exclusions
+# ============================================================
+# This repository tracks author-created writing-system content,
+# documentation, templates, and portable Obsidian configuration.
+#
+# Complete vault recovery, attachments, and generated output
+# are handled by the Restic backup layers.
+# ============================================================
+
+# Generated manuscript output
+01 Manuscript/Compiled/
+
+# Attachments and binary/reference material
+99 Attachments/
+
+# Obsidian device/session state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+.trashed-*
+
+# Installed Longform plugin distribution
+# Project-specific Longform data.json remains tracked.
+.obsidian/plugins/longform/main.js
+.obsidian/plugins/longform/manifest.json
+.obsidian/plugins/longform/styles.css
+
+# Common operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,17 @@
+filters:
+  and:
+    - type == "location"
+    - file.inFolder("02 Wiki/Locations")
+views:
+  - type: table
+    name: All Locations
+    order:
+      - file.name
+      - location_type
+      - status
+      - parent_location
+      - region
+      - first_appearance
+    sort:
+      - property: file.name
+        direction: ASC

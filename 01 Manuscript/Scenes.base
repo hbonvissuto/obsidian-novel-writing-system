@@ -1,0 +1,87 @@
+filters:
+  and:
+    - type == "scene"
+    - file.inFolder("01 Manuscript/Manuscript")
+views:
+  - type: table
+    name: All Scenes
+    order:
+      - file.name
+      - scene_number
+      - chapter
+      - pov
+      - status
+      - characters
+      - locations
+      - timeline
+    sort:
+      - property: scene_number
+        direction: ASC
+  - type: table
+    name: Planned
+    filters:
+      and:
+        - status == "planned"
+    order:
+      - file.name
+      - scene_number
+      - chapter
+      - pov
+      - status
+      - characters
+      - locations
+      - timeline
+    sort:
+      - property: scene_number
+        direction: ASC
+  - type: table
+    name: Drafting
+    filters:
+      and:
+        - status == "draft"
+    order:
+      - file.name
+      - scene_number
+      - chapter
+      - pov
+      - status
+      - characters
+      - locations
+      - timeline
+    sort:
+      - property: scene_number
+        direction: ASC
+  - type: table
+    name: Revision
+    filters:
+      and:
+        - status == "revised"
+    order:
+      - file.name
+      - scene_number
+      - chapter
+      - pov
+      - status
+      - characters
+      - locations
+      - timeline
+    sort:
+      - property: scene_number
+        direction: ASC
+  - type: table
+    name: By Chapter
+    groupBy:
+      property: chapter
+      direction: ASC
+    order:
+      - file.name
+      - scene_number
+      - chapter
+      - pov
+      - status
+      - characters
+      - locations
+      - timeline
+    sort:
+      - property: scene_number
+        direction: ASC

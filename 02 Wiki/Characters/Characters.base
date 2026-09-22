@@ -1,0 +1,15 @@
+filters:
+  and:
+    - type == "character"
+    - file.inFolder("02 Wiki/Characters")
+views:
+  - type: table
+    name: All Characters
+    order:
+      - file.name
+      - role
+      - species
+      - status
+      - affiliations
+      - locations
+      - first_appearance
