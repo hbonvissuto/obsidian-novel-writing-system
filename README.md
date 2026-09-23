@@ -30,6 +30,9 @@ An extensive outliner can build the Wiki and Planning sections before drafting. 
 
 ## Design Philosophy
 
+<!-- Screenshot to be added during clean-room release testing:
+![Novel workspace overview](docs/images/dashboard-overview.png)
+-->
 ### Markdown Is the Source of Truth
 
 The durable parts of the project live in ordinary Markdown notes and Obsidian Properties.
@@ -133,7 +136,31 @@ A fresh copy contains the following structure:
 The template begins in a neutral state so that it can be copied and initialized for a new novel without carrying project-specific material from another story.
 
 ---
+## A Look Inside
 
+The system keeps manuscript writing, story knowledge, and planning connected while allowing each part of the project to remain ordinary Markdown.
+
+### Organize the Story World
+
+Characters, locations, organizations, events, lore, and items remain ordinary Markdown notes with structured Properties.
+
+Obsidian Bases provide dynamic views over those notes without creating a separate database that must be maintained independently.
+
+<!-- Screenshot to be added during clean-room release testing:
+![Character Wiki Base](docs/images/wiki-characters.png)
+-->
+
+### Manage the Manuscript
+
+Longform manages manuscript Scene order and compilation while each Scene remains an ordinary Markdown note inside the vault.
+
+Scene Properties connect the manuscript to relevant characters, locations, organizations, events, lore, items, and plot threads without requiring the prose itself to behave like a Wiki.
+
+<!-- Screenshot to be added during clean-room release testing:
+![Longform manuscript view](docs/images/manuscript-longform.png)
+-->
+
+---
 ## Requirements
 
 ### Obsidian
@@ -670,10 +697,10 @@ Once these checks pass, the novel is initialized and ready for use.
 
 For a deeper explanation of the system, see:
 
-- [[05 Documentation/Novel System Guide|Novel System Guide]]
-- [[05 Documentation/Manuscript Workflow|Manuscript Workflow]]
-- [[05 Documentation/Planning Guide|Planning Guide]]
-- [[05 Documentation/Research Guide|Research Guide]]
-- [[02 Wiki/Wiki Property Guide|Wiki Property Guide]]
+- [Novel System Guide](05%20Documentation/Novel%20System%20Guide.md)
+- [Manuscript Workflow](05%20Documentation/Manuscript%20Workflow.md)
+- [Planning Guide](05%20Documentation/Planning%20Guide.md)
+- [Research Guide](05%20Documentation/Research%20Guide.md)
+- [Wiki Property Guide](02%20Wiki/Wiki%20Property%20Guide.md)
 
 `Novel System Guide` is the best place to begin after initialization.
