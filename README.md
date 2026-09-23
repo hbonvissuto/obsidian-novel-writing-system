@@ -242,7 +242,9 @@ The template already contains its folder structure, Bases, note templates, Prope
 
 Once initialized, you can begin wherever the novel needs you: create a Character, explore the Story Structure, start a Plot Thread, collect Research, build the Wiki, or simply write the first Scene.
 
-> [!note] Installing Longform
+> [!note] 
+> 
+> **Installing Longform**
 > On a newly downloaded vault, Obsidian may initially open in **Restricted Mode**.
 > 
 > To install Longform:
