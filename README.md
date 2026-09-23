@@ -43,15 +43,15 @@ Longform manages manuscript organization and compilation, while the individual S
 
 The system gives different kinds of information different homes:
 
-| Information | Home |
-| --- | --- |
-| What actually happens on the page | `01 Manuscript/` |
-| Established fictional truth | `02 Wiki/` |
-| Intended story development | `03 Planning/` |
-| Real-world research and sources | `04 Research/` |
+| Information                       | Home                |
+| --------------------------------- | ------------------- |
+| What actually happens on the page | `01 Manuscript/`    |
+| Established fictional truth       | `02 Wiki/`          |
+| Intended story development        | `03 Planning/`      |
+| Real-world research and sources   | `04 Research/`      |
 | Instructions for using the system | `05 Documentation/` |
-| Reusable note structures | `90 Templates/` |
-| Images, maps, and reference files | `99 Attachments/` |
+| Reusable note structures          | `90 Templates/`     |
+| Images, maps, and reference files | `99 Attachments/`   |
 
 This separation helps distinguish what **is true in the story** from what you **intend to happen**, what has actually made it **onto the page**, and what comes from **outside research**.
 
@@ -118,6 +118,7 @@ docs/
         dashboard-overview.png
         wiki-characters.png
         manuscript-longform.png
+        create-first-scene.png
 
 90 Templates/
     Character Arc Template.md
@@ -140,6 +141,7 @@ docs/
 The template begins in a neutral state so that it can be copied and initialized for a new novel without carrying project-specific material from another story.
 
 ---
+
 ## A Look Inside
 
 The system keeps manuscript writing, story knowledge, and planning connected while allowing each part of the project to remain ordinary Markdown.
@@ -152,7 +154,6 @@ Obsidian Bases provide dynamic views over those notes without creating a separat
 
 ![Character Wiki Base](docs/images/wiki-characters.png)
 
-
 ### Manage the Manuscript
 
 Longform manages manuscript Scene order and compilation while each Scene remains an ordinary Markdown note inside the vault.
@@ -162,6 +163,7 @@ Scene Properties connect the manuscript to relevant characters, locations, organ
 ![Longform manuscript view](docs/images/manuscript-longform.png)
 
 ---
+
 ## Requirements
 
 ### Obsidian
@@ -204,43 +206,16 @@ You do not need Git or any programming tools to use this system.
 
 The easiest way to begin is to download a copy of the template from GitHub and use it as the starting point for your novel.
 
+### Create Your Novel Vault
+
 1. Click **Code → Download ZIP** on this repository's GitHub page.
 2. Extract the downloaded ZIP file somewhere on your computer.
 3. Rename the extracted folder to the title of your novel.
-4. Open the renamed folder as an Obsidian vault.
-5. Install and enable the Longform community plugin.
-6. Complete the **Project Initialization** steps below.
-7. Create a test Scene to verify the manuscript pipeline.
-8. Start writing.
-
-Once downloaded, the novel is an ordinary local Obsidian vault. You do not need GitHub to continue using it.
-
-The template already contains its folder structure, Bases, note templates, Property configuration, attachment structure, and Longform workflow. Project initialization connects those reusable components to the identity of your new novel.
-
-Once initialized, you can begin wherever the novel needs you: create a Character, explore the Story Structure, start a Plot Thread, collect Research, build the Wiki, or simply write the first Scene.
-
----
-
-# Project Initialization
-
-> [!note]
-> The downloaded template becomes the starting point for your novel. During initialization, you will personalize its neutral project settings with your novel's title.
->
-> Keeping a separate untouched copy of the template is optional and is only necessary if you want a convenient local starting point for future novels.
-
-
-## 1. Create Your Novel Vault
-
-After downloading the repository as a ZIP file, extract it somewhere on your computer.
-
-The extracted folder is the starting vault for your novel.
-
-Rename that folder to the title of your project.
 
 For example:
 
 ```text
-novel-template
+novel-template-main
 ```
 
 becomes:
@@ -249,19 +224,49 @@ becomes:
 My Novel
 ```
 
-You may place the folder wherever you normally keep your writing projects or Obsidian vaults.
+> [!important]
+> Rename the folder **before opening it in Obsidian**.
+> 
+> The folder becomes the Obsidian vault for your novel, and renaming it beforehand avoids having to close and reopen the vault during initialization.
 
-Open Obsidian and choose:
+4. Move the renamed folder wherever you normally keep your writing projects or Obsidian vaults.
+5. Open Obsidian and choose **Open folder as vault**.
+6. Select the renamed project folder.
+7. Install and enable the Longform community plugin.
+8. Complete the **Project Initialization** steps below.
+9. Start writing!
 
-**Open folder as vault**
+Once downloaded, the novel is an ordinary local Obsidian vault. You do not need GitHub to continue using it.
 
-Select the renamed project folder.
+The template already contains its folder structure, Bases, note templates, Property configuration, attachment structure, and Longform workflow. Project initialization connects those reusable components to the identity of your new novel.
 
-Your novel now has its own local Obsidian vault.
+Once initialized, you can begin wherever the novel needs you: create a Character, explore the Story Structure, start a Plot Thread, collect Research, build the Wiki, or simply write the first Scene.
+
+> [!note] Installing Longform
+> On a newly downloaded vault, Obsidian may initially open in **Restricted Mode**.
+> 
+> To install Longform:
+> 
+> 1. Open **Settings → Community plugins**.
+> 2. If Restricted Mode is enabled, select **Exit Restricted mode**.
+> 3. Select **Browse** and search for `Longform`.
+> 4. Choose **Longform by kevboh**.
+> 5. Select **Install**, then **Enable**.
+> 
+> Once enabled, Longform should automatically load the project configuration included with the template. **There is no need to create a Longform project manually.**
 
 ---
 
-## 2. Rename the Manuscript Project Folder
+# Project Initialization
+
+> [!note]
+> The downloaded template becomes the starting point for your novel. During initialization, you will personalize its neutral project settings with your novel's title.
+> 
+> Keeping a separate untouched copy of the template is optional and is only necessary if you want a convenient local starting point for future novels.
+
+---
+
+## 1. Rename the Manuscript Project Folder
 
 Navigate to:
 
@@ -279,7 +284,7 @@ The fresh template contains:
 └── Scenes.base
 ```
 
-Rename:
+Rename the sub folder:
 
 ```text
 Manuscript/
@@ -297,15 +302,20 @@ For example:
 └── Scenes.base
 ```
 
+> [!note]
+> When Obsidian asks whether to update internal links after renaming the folder, choose **Always update**.
+> 
+> This allows references to the manuscript project to follow the renamed folder automatically.
+
 Do not rename `Index.md`.
 
 `Index.md` contains the Longform project definition.
 
-Longform follows the renamed project folder automatically, so the Longform project does not need to be recreated after this change.
+**Longform follows the renamed project folder automatically, so the Longform project does not need to be recreated after this change.**
 
 ---
 
-## 3. Initialize the Novel Dashboard
+## 2. Initialize the Novel Dashboard
 
 Open:
 
@@ -352,7 +362,7 @@ This is optional and can remain a placeholder while the project is still taking 
 
 ---
 
-## 4. Initialize Story Structure
+## 3. Initialize Story Structure
 
 Open:
 
@@ -392,7 +402,7 @@ The rest of Story Structure may remain blank until the project develops enough t
 
 ---
 
-## 5. Initialize Longform
+## 4. Initialize Longform
 
 Open the Longform pane.
 
@@ -437,7 +447,7 @@ The `/` Scene Folder means that manuscript Scenes live directly inside the Longf
 
 ---
 
-## 6. Configure the Compilation Destination
+## 5. Configure the Compilation Destination
 
 Open:
 
@@ -481,12 +491,12 @@ For example:
 
 > [!important]
 > Compiled manuscripts are generated output.
->
+> 
 > Make manuscript revisions in the source Scene notes and compile again rather than editing the compiled manuscript directly.
 
 ---
 
-## 7. Update the Scenes Base
+## 6. Update the Scenes Base
 
 Open:
 
@@ -573,15 +583,21 @@ These settings are part of the reusable template configuration and normally do n
 
 ---
 
-## 8. Create a Test Scene
+## 7. Create a Test Scene
 
 Before beginning substantial work, it is useful to verify that the initialized manuscript pipeline is functioning.
 
-In the Longform **Scenes** tab, create:
+In the Longform **Scenes** tab, enter a Scene name in the **New Scene** field.
+
+For example:
 
 ```text
 001 - Test Scene
 ```
+
+![Creating a new Scene in the Longform panel](docs/images/create-first-scene.png)
+
+Create the Scene.
 
 The new note should appear inside:
 
@@ -626,7 +642,7 @@ The test Scene may then be deleted.
 
 ---
 
-## 9. Optional Compilation Test
+## 8. Optional Compilation Test
 
 A new project can also verify the complete manuscript pipeline before drafting begins.
 
@@ -675,6 +691,7 @@ Before beginning the novel, confirm:
 - [ ] The downloaded template has been extracted to a local folder.
 - [ ] The vault folder has been renamed to the project's name.
 - [ ] The project folder has been opened as an Obsidian vault.
+- [ ] Longform has been installed and enabled.
 - [ ] `01 Manuscript/Manuscript/` has been renamed to the project's name.
 - [ ] `Novel Dashboard.md` has the correct `project` Property.
 - [ ] The Dashboard H1 displays the project's name.
