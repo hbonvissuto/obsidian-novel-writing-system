@@ -26,13 +26,11 @@ The system is intended to work with different writing processes rather than pres
 
 An extensive outliner can build the Wiki and Planning sections before drafting. A discovery writer can begin with the first Scene and add structure only when it becomes useful. A project can also move back and forth between those approaches as it develops.
 
+![Novel workspace overview](docs/images/dashboard-overview.png)
 ---
 
 ## Design Philosophy
 
-<!-- Screenshot to be added during clean-room release testing:
-![Novel workspace overview](docs/images/dashboard-overview.png)
--->
 ### Markdown Is the Source of Truth
 
 The durable parts of the project live in ordinary Markdown notes and Obsidian Properties.
@@ -115,6 +113,12 @@ A fresh copy contains the following structure:
     Planning Guide.md
     Research Guide.md
 
+docs/
+    images/
+        dashboard-overview.png
+        wiki-characters.png
+        manuscript-longform.png
+
 90 Templates/
     Character Arc Template.md
     Character Template.md
@@ -146,9 +150,8 @@ Characters, locations, organizations, events, lore, and items remain ordinary Ma
 
 Obsidian Bases provide dynamic views over those notes without creating a separate database that must be maintained independently.
 
-<!-- Screenshot to be added during clean-room release testing:
 ![Character Wiki Base](docs/images/wiki-characters.png)
--->
+
 
 ### Manage the Manuscript
 
@@ -156,9 +159,7 @@ Longform manages manuscript Scene order and compilation while each Scene remains
 
 Scene Properties connect the manuscript to relevant characters, locations, organizations, events, lore, items, and plot threads without requiring the prose itself to behave like a Wiki.
 
-<!-- Screenshot to be added during clean-room release testing:
 ![Longform manuscript view](docs/images/manuscript-longform.png)
--->
 
 ---
 ## Requirements
@@ -704,3 +705,35 @@ For a deeper explanation of the system, see:
 - [Wiki Property Guide](02%20Wiki/Wiki%20Property%20Guide.md)
 
 `Novel System Guide` is the best place to begin after initialization.
+
+---
+
+# License
+
+The Obsidian Novel Writing System is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0).
+
+You are free to download, use, and adapt this system for your own writing projects, including projects you intend to publish or sell commercially.
+
+You may also share the system or adaptations of it for noncommercial purposes, provided appropriate credit is given to the original creator.
+
+Commercial exploitation, resale, or commercial redistribution of the Novel Writing System or adaptations based upon it is not permitted under this license without separate permission from the copyright holder.
+
+## Your Writing Is Yours
+
+The license applies to the Novel Writing System itself, including its original templates, documentation, configuration, and other distributed materials.
+
+It does **not** claim ownership of novels, stories, characters, worldbuilding, research, notes, or other original content created using the system.
+
+You retain all rights to your own creative work and may publish, sell, license, or otherwise use that work commercially without restriction from this license.
+
+Using the Novel Writing System to create a commercial novel or other creative work does **not** make that creative work subject to the CC BY-NC 4.0 license.
+
+## Attribution
+
+If you share or redistribute the Novel Writing System, or a noncommercial adaptation of it, please provide appropriate attribution to:
+
+**Harrison Bonvissuto — Obsidian Novel Writing System**
+
+See the repository's `LICENSE` file for the full license terms.
+
+---
