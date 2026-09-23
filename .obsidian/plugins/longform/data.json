@@ -4,28 +4,7 @@
   "selectedDraftVaultPath": "01 Manuscript/Manuscript/Index.md",
   "userScriptFolder": null,
   "sessionStorage": "data",
-  "sessions": [
-    {
-      "start": "2026-09-22T14:51:54.982Z",
-      "total": 0,
-      "drafts": {
-        "01 Manuscript/Manuscript/Index.md": {
-          "total": 0,
-          "scenes": {}
-        }
-      }
-    },
-    {
-      "start": "2026-09-21T21:18:58.659Z",
-      "total": 0,
-      "drafts": {
-        "01 Manuscript/Manuscript/Index.md": {
-          "total": 0,
-          "scenes": {}
-        }
-      }
-    }
-  ],
+  "sessions": [],
   "showWordCountInStatusBar": true,
   "startNewSessionEachDay": true,
   "sessionGoal": 500,

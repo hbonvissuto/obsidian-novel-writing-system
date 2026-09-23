@@ -35,7 +35,7 @@ When a property refers to another established Wiki entity, use an Obsidian `[[In
 
 Example:
 
-`[[The Choir]]`
+`[[The Lantern Guild]]`
 
 Use links to represent **meaningful relationships**, not every possible association.
 
@@ -131,8 +131,8 @@ Use Obsidian's Aliases property for established alternate names, nicknames, titl
 
 Examples:
 
-- `Fi`
-- `Vigil`
+- ``Mar (for Mara)
+- `Docks (for Harbor Ward)`
 
 ## affiliations
 
@@ -140,7 +140,7 @@ List of meaningful `[[Organization]]` relationships.
 
 Example:
 
-`[[The Choir]]`
+`[[The Lantern Guild]]`
 
 An affiliation does not necessarily imply formal membership.
 
@@ -172,12 +172,12 @@ Use Obsidian's Aliases property for established alternate names, historical name
 
 Example:
 
-`Bell Quarter`
+`Harbor Ward`
 
 Aliases:
 
-- `Bells`
-- `The Bell`
+- `The Harbor`
+- `Docks`
 
 ## location_type
 
@@ -252,9 +252,9 @@ Link to the location that directly contains this location.
 
 Example:
 
-If `[[Bell Quarter]]` is a district within `[[Barrowmere]]`:
+If `[[Harbor Ward]]` is a district within `[[Greyhaven]]`:
 
-`parent_location: [[Barrowmere]]`
+`parent_location: [[Greyhaven]]`
 
 Prefer `parent_location` for the immediate geographic hierarchy.
 
@@ -555,13 +555,13 @@ Use the appropriate related property to identify the entity itself.
 
 Example:
 
-For `Clover's Blood`:
+For `Mara's Sight`:
 
 `scope: individual`
 
 and:
 
-`related_characters: [[Clover]]`
+`related_characters: [[Mara Vey]]`
 
 ## related_locations
 
@@ -719,7 +719,7 @@ Use a link to the Scene note.
 
 Example:
 
-`[[001 - Clover and René Aqueduct Rendezvous]]`
+`[[001 - Mara Meets the Ferryman]]`
 
 ---
 
