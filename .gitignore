@@ -8,12 +8,6 @@
 # are handled by the Restic backup layers.
 # ============================================================
 
-# Generated manuscript output
-01 Manuscript/Compiled/
-
-# Attachments and binary/reference material
-99 Attachments/
-
 # Obsidian device/session state
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
